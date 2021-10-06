@@ -4,7 +4,7 @@ import React from "react";
 export default function Projects() {
   return (
     <div>
-      <p>Projects Page</p>
+      <h2>Projects</h2>
     </div>
   )
 }

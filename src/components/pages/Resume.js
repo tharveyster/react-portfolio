@@ -4,7 +4,7 @@ import React from "react";
 export default function Resume() {
   return (
     <div>
-      <p>Resume Page</p>
+      <h2>Resume</h2>
     </div>
   )
 }

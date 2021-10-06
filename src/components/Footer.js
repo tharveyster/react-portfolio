@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Footer() {
   const footer = {
-    backgroundColor: 'royalblue',
+    backgroundColor: '#0a2c6b',
     color: 'white',
     display: 'flex',
     justifyContent: 'center',
