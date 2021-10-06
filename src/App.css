@@ -18,7 +18,8 @@
   text-shadow: 1px 1px orange, 1px -1px orange, -1px -1px orange, -1px 1px orange;
 }
 
-.about {
+.about,
+.skills {
   background-color: #ccc;
   margin: 0;
   padding: 20px;
@@ -38,4 +39,8 @@
 
 .resume-link:hover {
   color: royalblue;
+}
+
+.skillList {
+  list-style: none;
 }
