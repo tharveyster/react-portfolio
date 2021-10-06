@@ -17,7 +17,7 @@ export default function Portfolio() {
     if (currentPage === 'Projects') {
       return <Projects />;
     }
-    if (currentPage === 'Contact Me') {
+    if (currentPage === 'Contact') {
       return <Contact />;
     }
     return <Resume />;

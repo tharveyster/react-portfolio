@@ -36,11 +36,11 @@ export default function Navigation({ currentPage, handlePageChange }) {
       <li className="nav-item" style={navItem}>
         <a
           href="#contact"
-          onClick={() => handlePageChange('Contact Me')}
+          onClick={() => handlePageChange('Contact')}
 
-          className={currentPage === 'Contact Me' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
         >
-          Contact Me
+          Contact
         </a>
       </li>
       <li className="nav-item" style={navItem}>

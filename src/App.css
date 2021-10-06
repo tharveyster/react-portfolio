@@ -1,6 +1,7 @@
 .nav-link {
   color: white;
   text-decoration: none;
+  text-shadow:  1px 1px #aaa, 1px -1px #aaa, -1px -1px #aaa, -1px 1px #aaa;
 }
 
 .nav-link:hover {
@@ -9,10 +10,20 @@
 
 .active {
   color: orange;
-  text-shadow: 1px 1px brown;
+  text-shadow: 1px 1px brown, 1px -1px brown, -1px -1px brown, -1px 1px brown;
 }
 
 .active:hover {
   color: yellow;
-  text-shadow: 1px 1px orange;
+  text-shadow: 1px 1px orange, 1px -1px orange, -1px -1px orange, -1px 1px orange;
+}
+
+.resume-link {
+  color: #0a2c6b;
+  text-decoration: none;
+  text-shadow:  1px 1px #888, 1px -1px #888, -1px -1px #888, -1px 1px #888;
+}
+
+.resume-link:hover {
+  color: royalblue;
 }
