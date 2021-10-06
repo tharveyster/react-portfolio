@@ -1,1 +1,1 @@
-// The navbar will go here
+// This is where the navigation will go

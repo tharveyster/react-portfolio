@@ -1,1 +1,2 @@
-// The header code will go here
+// This is where the page header will go
+
