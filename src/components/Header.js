@@ -1,5 +1,6 @@
 import React from 'react';
 import background from '../images/header-bg.png';
+import Navigation from './Navigation';
 
 export default function Header() {
   const header = {
@@ -10,6 +11,7 @@ export default function Header() {
   }
   return (
     <>
+      <Navigation />
       <h1 style={header}>Todd Harvey</h1>
     </>
   )
