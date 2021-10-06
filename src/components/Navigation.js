@@ -12,8 +12,8 @@ export default function Navigation({ currentPage, handlePageChange }) {
     fontSize: 20
   }
   return (
-    <ul className="nav nav-tabs" style={navbar}>
-      <li className="nav-item" style={navItem}>
+    <ul style={navbar}>
+      <li style={navItem}>
         <a
           href="#about"
           onClick={() => handlePageChange('About Me')}
@@ -23,7 +23,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
           About Me
         </a>
       </li>
-      <li className="nav-item" style={navItem}>
+      <li style={navItem}>
         <a
           href="#projects"
           onClick={() => handlePageChange('Projects')}
@@ -33,7 +33,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
           Projects
         </a>
       </li>
-      <li className="nav-item" style={navItem}>
+      <li style={navItem}>
         <a
           href="#contact"
           onClick={() => handlePageChange('Contact')}
@@ -43,7 +43,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
           Contact
         </a>
       </li>
-      <li className="nav-item" style={navItem}>
+      <li style={navItem}>
         <a
           href="#resume"
           onClick={() => handlePageChange('Resume')}

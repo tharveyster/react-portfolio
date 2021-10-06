@@ -1,4 +1,3 @@
-// This is the section for my resume and skills
 import React from "react";
 import myResume from '../../todd-harvey-resume.pdf'
 
@@ -16,7 +15,7 @@ export default function Resume() {
       <h2>Resume</h2>
       <p>My resume can be <a className="resume-link" href={myResume} rel="noreferrer" target="_blank">downloaded here</a>.</p>
 
-      <h3>Front End Proficiencies</h3>
+      <h3>Frontend Proficiencies</h3>
       <ul style={skillList}>
         <li>HTML</li>
         <li>CSS</li>
@@ -26,7 +25,7 @@ export default function Resume() {
         <li>React</li>
       </ul>
 
-      <h3>Back End Proficiencies</h3>
+      <h3>Backend Proficiencies</h3>
       <ul style={skillList}>
         <li>Node</li>
         <li>Express</li>

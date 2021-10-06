@@ -18,6 +18,18 @@
   text-shadow: 1px 1px orange, 1px -1px orange, -1px -1px orange, -1px 1px orange;
 }
 
+.about {
+  background-color: #ccc;
+  margin: 0;
+  padding: 20px;
+}
+
+.picture {
+  height: 150px;
+  width: 150px;
+  border-radius: 75px;
+}
+
 .resume-link {
   color: #0a2c6b;
   text-decoration: none;
