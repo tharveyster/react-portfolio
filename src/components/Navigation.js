@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Navigation() {
+export default function Navigation({ currentPage, handlePageChange }) {
   const navbar = {
     color: 'white',
     float: 'right',
@@ -13,10 +13,46 @@ export default function Navigation() {
   }
   return (
     <ul className="nav nav-tabs" style={navbar}>
-      <li className="nav-item" style={navItem}>About Me</li>
-      <li className="nav-item" style={navItem}>Projects</li>
-      <li className="nav-item" style={navItem}>Contact Me</li>
-      <li className="nav-item" style={navItem}>Resume</li>
+      <li className="nav-item" style={navItem}>
+        <a
+          href="#about"
+          onClick={() => handlePageChange('About Me')}
+
+          className={currentPage === 'About Me' ? 'nav-link active' : 'nav-link'}
+        >
+          About Me
+        </a>
+      </li>
+      <li className="nav-item" style={navItem}>
+        <a
+          href="#projects"
+          onClick={() => handlePageChange('Projects')}
+
+          className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}
+        >
+          Projects
+        </a>
+      </li>
+      <li className="nav-item" style={navItem}>
+        <a
+          href="#contact"
+          onClick={() => handlePageChange('Contact Me')}
+
+          className={currentPage === 'Contact Me' ? 'nav-link active' : 'nav-link'}
+        >
+          Contact Me
+        </a>
+      </li>
+      <li className="nav-item" style={navItem}>
+        <a
+          href="#resume"
+          onClick={() => handlePageChange('Resume')}
+
+          className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+        >
+          Resume
+        </a>
+      </li>
     </ul>
   )
 }
