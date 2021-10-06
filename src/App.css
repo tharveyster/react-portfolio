@@ -19,7 +19,8 @@
 }
 
 .about,
-.skills {
+.skills,
+.contactForm {
   background-color: #ccc;
   margin: 0;
   padding: 20px;
@@ -29,6 +30,38 @@
   height: 150px;
   width: 150px;
   border-radius: 75px;
+}
+
+label {
+  font-weight: 600;
+}
+
+.form-field {
+  display: block;
+  margin-bottom: 20px;
+  width: 40%;
+  min-width: 350px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+textarea {
+  min-height: 200px;
+  resize: none;
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  background-color: #0a2c6b;
+  color: white;
+  padding: 10px;
+}
+
+.btn:hover {
+  background-color: #888;
+  color: #0a2c6b;
 }
 
 .resume-link {
