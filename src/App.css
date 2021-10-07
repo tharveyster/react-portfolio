@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.title {
+  background-image: url('./images/header-bg.png');
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+  font-family: verdana;
+  font-style: italic;
+}
+
+.navbar {
+  color: white;
+  float: right;
+  list-style: none;
+}
+
+.navItem {
+  display: inline;
+  margin: 0 10px 0 20px;
+  font-size: 20px;
+}
+
 .nav-link {
   color: white;
   text-decoration: none;
@@ -20,7 +43,8 @@
 
 .about,
 .skills,
-.contactForm {
+.contactForm,
+.work {
   background-color: #ccc;
   margin: 0;
   padding: 20px;
