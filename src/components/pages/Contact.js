@@ -94,13 +94,13 @@ export default function Contact() {
           placeholder="Message"
         />
         </label>
+        {errorMessage && (
+          <div>
+            <p className="error-text">{errorMessage}</p>
+          </div>
+        )}
         <button className="btn" type="button" onClick={handleFormSubmit}>Submit</button>
       </form>
-      {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
-        </div>
-      )}
     </div>
   )
 }
