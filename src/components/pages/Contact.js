@@ -21,6 +21,30 @@ export default function Contact() {
     }
   };
 
+  const validation = (e) => {
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+    if (inputType === 'name') {
+      if (!inputValue.length) {
+        setErrorMessage('The name field is required');
+      }
+    } else if (inputType === 'email') {
+      if (!validateEmail(inputValue)) {
+        setErrorMessage('Email is invalid');
+      } else {
+        setErrorMessage('');
+      }
+      if (!inputValue.length) {
+        setErrorMessage('The email field is required');
+      }
+    } else {
+      if (!inputValue.length) {
+        setErrorMessage('The message field is required');
+      }
+    }
+  }
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
@@ -31,6 +55,7 @@ export default function Contact() {
     setName('');
     setEmail('');
     setMessage('');
+    setErrorMessage('');
   };
 
   return (
@@ -42,6 +67,7 @@ export default function Contact() {
           className="form-field"
           value={name}
           name="name"
+          onBlur={validation}
           onChange={handleInputChange}
           type="text"
           placeholder="Name"  
@@ -52,6 +78,7 @@ export default function Contact() {
           className="form-field"
            value={email}
           name="email"
+          onBlur={validation}
           onChange={handleInputChange}
           type="email"
           placeholder="Email"
@@ -62,6 +89,7 @@ export default function Contact() {
           className="form-field"
           value={message}
           name="message"
+          onBlur={validation}
           onChange={handleInputChange}
           placeholder="Message"
         />
