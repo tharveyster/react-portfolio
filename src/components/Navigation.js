@@ -30,7 +30,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
 
           className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}
         >
-          Projects
+          Portfolio
         </a>
       </li>
       <li style={navItem}>

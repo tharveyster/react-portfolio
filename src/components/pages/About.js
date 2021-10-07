@@ -1,4 +1,3 @@
-// This is the about me section
 import React from "react";
 import profilePic from '../../images/todd.jpg';
 

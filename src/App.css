@@ -77,3 +77,23 @@ textarea {
 .skillList {
   list-style: none;
 }
+
+footer {
+  background-color: #0a2c6b;
+  color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.footerLink {
+  color: #ccc;
+  vertical-align: middle;
+  padding: 10px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footerLink:hover {
+  color: #fff;
+}

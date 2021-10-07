@@ -1,4 +1,3 @@
-// This is the section where the projects will be displayed
 import React from "react";
 
 export default function Projects() {
@@ -9,7 +8,7 @@ export default function Projects() {
   }
   return (
     <div style={work}>
-      <h2>Projects</h2>
+      <h2>Portfolio</h2>
     </div>
   )
 }
