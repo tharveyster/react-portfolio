@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-
 .title {
   background-image: url('./images/header-bg.png');
   color: #fff;
@@ -103,6 +101,7 @@ textarea {
 }
 
 footer {
+  clear: both;
   background-color: #0a2c6b;
   color: #ccc;
   display: flex;
