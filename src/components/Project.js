@@ -1,17 +1,15 @@
 import React from "react";
 
-const card = {
-  
-}
-const title = {
-  backgroundColor: 'orange'
-}
-
 export default function Project(props) {
+  const card = {
+    backgroundImage: `url(${props.image})`,
+  }
   return (
-    <div style={card}>
-        <h3 style={title}>{props.title}</h3>
-      <p>{props.resources}</p>
+    <div className="card" style={card}>
+        <h3 className="card-title">{props.title}</h3>
+      <h4 className="card-resources">{props.resources}</h4>
+      <span className="card-git"><a href={props.github} rel="noreferrer" target="_blank">GitHub</a></span>
+      <span className="card-link"><a href={props.deployed} rel="noreferrer" target="_blank">Deployed</a></span>
     </div>
   )
 }
