@@ -54,6 +54,14 @@
   border-radius: 75px;
 }
 
+.cards {
+  margin: 0 auto;
+  max-width: 1000;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
 label {
   font-weight: 600;
 }

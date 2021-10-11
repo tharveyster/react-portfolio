@@ -1,9 +1,7 @@
 import React from "react";
 
-const cardSize = {
-  width: '30%',
-  float: 'left',
-  margin: 30
+const card = {
+  
 }
 const title = {
   backgroundColor: 'orange'
@@ -11,10 +9,8 @@ const title = {
 
 export default function Project(props) {
   return (
-    <div style={cardSize}>
-      <div className="col-sm-6" style={title}>
-        <h3>{props.title}</h3>
-      </div>
+    <div style={card}>
+        <h3 style={title}>{props.title}</h3>
       <p>{props.resources}</p>
     </div>
   )
