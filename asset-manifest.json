@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.838c3e68.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.f4ec7add.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.f4ec7add.chunk.js.map",
+    "main.js": "/react-portfolio/static/js/main.672fad23.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.672fad23.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.7530632e.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.7530632e.js.map",
     "static/js/2.99ed25ba.chunk.js": "/react-portfolio/static/js/2.99ed25ba.chunk.js",
@@ -17,12 +17,13 @@
     "static/media/App.css": "/react-portfolio/static/media/header-bg.d95f975e.png",
     "static/media/personal-cookbook-1.27a6c94c.png": "/react-portfolio/static/media/personal-cookbook-1.27a6c94c.png",
     "static/media/tech-blog-screenshot.56b3f713.png": "/react-portfolio/static/media/tech-blog-screenshot.56b3f713.png",
+    "static/media/todd-harvey-resume.7b66cd03.pdf": "/react-portfolio/static/media/todd-harvey-resume.7b66cd03.pdf",
     "static/media/todd.c32d7d1b.jpg": "/react-portfolio/static/media/todd.c32d7d1b.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.7530632e.js",
     "static/js/2.99ed25ba.chunk.js",
     "static/css/main.838c3e68.chunk.css",
-    "static/js/main.f4ec7add.chunk.js"
+    "static/js/main.672fad23.chunk.js"
   ]
 }
