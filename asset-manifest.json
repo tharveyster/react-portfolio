@@ -1,23 +1,29 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.837a5418.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.73d6a4e9.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.73d6a4e9.chunk.js.map",
+    "main.css": "/react-portfolio/static/css/main.7e9e0de0.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.0a5fc9e3.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.0a5fc9e3.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.7530632e.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.7530632e.js.map",
     "static/js/2.99ed25ba.chunk.js": "/react-portfolio/static/js/2.99ed25ba.chunk.js",
     "static/js/2.99ed25ba.chunk.js.map": "/react-portfolio/static/js/2.99ed25ba.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
-    "static/css/main.837a5418.chunk.css.map": "/react-portfolio/static/css/main.837a5418.chunk.css.map",
+    "static/css/main.7e9e0de0.chunk.css.map": "/react-portfolio/static/css/main.7e9e0de0.chunk.css.map",
     "static/js/2.99ed25ba.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.99ed25ba.chunk.js.LICENSE.txt",
+    "static/media/budget-tracker-6.2eb14ce5.png": "/react-portfolio/static/media/budget-tracker-6.2eb14ce5.png",
+    "static/media/ecbe-walkthrough-screenshot.6d97b73c.png": "/react-portfolio/static/media/ecbe-walkthrough-screenshot.6d97b73c.png",
+    "static/media/fitness-tracker-4.a17d9bcd.png": "/react-portfolio/static/media/fitness-tracker-4.a17d9bcd.png",
+    "static/media/flixfinder-demo.f617018b.png": "/react-portfolio/static/media/flixfinder-demo.f617018b.png",
     "static/media/App.css": "/react-portfolio/static/media/header-bg.d95f975e.png",
+    "static/media/personal-cookbook-1.27a6c94c.png": "/react-portfolio/static/media/personal-cookbook-1.27a6c94c.png",
+    "static/media/tech-blog-screenshot.56b3f713.png": "/react-portfolio/static/media/tech-blog-screenshot.56b3f713.png",
     "static/media/todd-harvey-resume.8bba02f8.pdf": "/react-portfolio/static/media/todd-harvey-resume.8bba02f8.pdf",
     "static/media/todd.c32d7d1b.jpg": "/react-portfolio/static/media/todd.c32d7d1b.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.7530632e.js",
     "static/js/2.99ed25ba.chunk.js",
-    "static/css/main.837a5418.chunk.css",
-    "static/js/main.73d6a4e9.chunk.js"
+    "static/css/main.7e9e0de0.chunk.css",
+    "static/js/main.0a5fc9e3.chunk.js"
   ]
 }
