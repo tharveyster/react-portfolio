@@ -132,12 +132,18 @@ h2 {
 .card-link a {
   color: #0a2c6b;
   text-decoration: none;
-  text-shadow:  1px 1px #888, 1px -1px #888, -1px -1px #888, -1px 1px #888;
+  font-weight: 700;
+  text-shadow:  1px 1px #000044;
 }
 
 .card-git a:hover,
 .card-link a:hover {
   color: royalblue;
+  position: relative;
+  top: 1px;
+  left: 1px;
+  text-shadow: none;
+  padding: 15px;
 }
 
 .card:hover > .card-title,
