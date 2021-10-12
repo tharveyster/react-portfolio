@@ -1,7 +1,7 @@
 # React Portfolio
 
 ## Description
-In this project, I created a portfolio to display my completed web development projects. This was built using React, and the style layout is mobile-first.
+In this project, I created a portfolio to display my completed web development projects. This was built using ```React```, and the style layout is mobile-first.
 
 The navigation links in the header go to the appropriate sections without refreshing the page.
 
