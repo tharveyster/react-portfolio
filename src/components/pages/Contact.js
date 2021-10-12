@@ -61,6 +61,7 @@ export default function Contact() {
   return (
     <div className="contactForm">
       <h2>Contact</h2>
+      <p>This form is not active yet. In the meantime you can reach me at todd@theharveysplace.com.</p>
       <form className="form">
         <label>Name:
         <input
