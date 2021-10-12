@@ -18,6 +18,7 @@
   display: inline;
   margin: 0 10px 0 20px;
   font-size: 20px;
+  white-space: nowrap;
 }
 
 .nav-link {
