@@ -231,3 +231,10 @@ footer {
   left: 1px;
   text-shadow: 1px 1px #ccc;
 }
+
+@media only screen and (max-width: 500px) {
+  .navItem {
+    margin: 0 0 0 15px;
+    font-size: 18px;
+  }
+  }
