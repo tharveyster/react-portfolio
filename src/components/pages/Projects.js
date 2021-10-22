@@ -10,6 +10,7 @@ import pic6 from "../../images/flixfinder-demo.png";
 const projects = [
   {
     title: "Budget Tracker",
+    description: "This app keeps track of a running budget balance, online or offline. If updated while offline, it updates the database as soon as an internet connection becomes available.",
     resources:
       "HTML, CSS, JavaScript, Node, Express, MongoDB, Mongoose, IndexedDB",
     github: "https://github.com/tharveyster/budget-tracker",
@@ -19,6 +20,7 @@ const projects = [
   },
   {
     title: "Fitness Tracker",
+    description: "This app tracks cardio distance and amount of weight lifted for workouts.",
     resources:
       "HTML, CSS, JavaScript, MongoDB, Mongoose, Node, Express, Morgan",
     github: "https://github.com/tharveyster/fitness-tracker",
@@ -28,6 +30,7 @@ const projects = [
   },
   {
     title: "Personal Cookbook",
+    description: "Allows registered users to search for recipes. Results are received from the Spoonacular API, and the users have the option of saving individual recipes to, or delete them from, their own personal cookbooks.",
     resources:
       "HTML, CSS, JavaScript, Node, Express, Handlebars, MySQL, Axios, APIs",
     github: "https://github.com/tharveyster/recipe-search",
@@ -37,6 +40,7 @@ const projects = [
   },
   {
     title: "Tech Blog",
+    description: "A tech blog that allows users to read blog posts from other users. Registered users can add their own posts and comment on posts.",
     resources:
       "HTML, CSS, JavaScript, Node, Express, Handlebars, MySQL, BCrypt, Sequelize, Sequelize Session",
     github: "https://github.com/tharveyster/tech-blog",
@@ -46,6 +50,7 @@ const projects = [
   },
   {
     title: "E-Commerce Back-End",
+    description: "This project is an e-commerce back-end application.",
     resources: "Node, Express, MySQL2, Sequelize, dotenv, Insomnia Core",
     github: "https://github.com/tharveyster/e-commerce-back-end",
     deployed:
@@ -55,6 +60,7 @@ const projects = [
   },
   {
     title: "FlixFinder",
+    description: "A group project that takes a user submitted movie title and returns information about the movie, a trailer for the movie, and three similar movies. A search history is saved to local storage.",
     resources:
       "HTML, CSS, JavaScript, Server Side APIs (OMDB, Google Youtube, TMDB)",
     github: "https://github.com/tharveyster/FlixFinder",
@@ -72,6 +78,7 @@ export default function Projects() {
         {projects.map((project) => (
           <Project
             title={project.title}
+            description={project.description}
             resources={project.resources}
             github={project.github}
             deployed={project.deployed}
