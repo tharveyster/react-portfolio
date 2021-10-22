@@ -151,7 +151,7 @@ h2 {
 .card-link {
   opacity: 0;
   background-color: rgba(255,255,255,0);
-  transition: opacity 0.9s, background-color 0.9s;
+  transition: opacity 4s ease, background-color 4s ease;
 }
 
 .card:hover > .card-title,
@@ -160,7 +160,8 @@ h2 {
 .card:hover > .card-git,
 .card:hover > .card-link {
   opacity: 1;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(175,225,255,0.8);
+  transition: opacity 0.5s ease, background-color 0.5s ease;
 }
 
 label {
