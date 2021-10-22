@@ -20,7 +20,7 @@ const projects = [
   },
   {
     title: "Fitness Tracker",
-    description: "This app tracks cardio distance and amount of weight lifted for workouts.",
+    description: "This app tracks cardio distances and amount of weight lifted for workouts. Exercises can be added to an existing workout, or a new workout can be created.",
     resources:
       "HTML, CSS, JavaScript, MongoDB, Mongoose, Node, Express, Morgan",
     github: "https://github.com/tharveyster/fitness-tracker",
@@ -30,7 +30,7 @@ const projects = [
   },
   {
     title: "Personal Cookbook",
-    description: "Allows registered users to search for recipes. Results are received from the Spoonacular API, and the users have the option of saving individual recipes to, or delete them from, their own personal cookbooks.",
+    description: "Allows registered users to search for recipes. Results are received from the Spoonacular API, and the users have the option of saving individual recipes to, or deleting them from, their own personal cookbooks.",
     resources:
       "HTML, CSS, JavaScript, Node, Express, Handlebars, MySQL, Axios, APIs",
     github: "https://github.com/tharveyster/recipe-search",
@@ -40,7 +40,7 @@ const projects = [
   },
   {
     title: "Tech Blog",
-    description: "A tech blog that allows users to read blog posts from other users. Registered users can add their own posts and comment on posts.",
+    description: "A tech blog that allows users to read blog posts from other users. Registered users can add, edit, or delete their own posts and comment on posts.",
     resources:
       "HTML, CSS, JavaScript, Node, Express, Handlebars, MySQL, BCrypt, Sequelize, Sequelize Session",
     github: "https://github.com/tharveyster/tech-blog",
@@ -60,7 +60,7 @@ const projects = [
   },
   {
     title: "FlixFinder",
-    description: "A group project that takes a user submitted movie title and returns information about the movie, a trailer for the movie, and three similar movies. A search history is saved to local storage.",
+    description: "A group project that takes a user submitted movie title and returns information about the movie, a trailer for the movie, and three similar movie titles. A search history is saved to local storage.",
     resources:
       "HTML, CSS, JavaScript, Server Side APIs (OMDB, Google Youtube, TMDB)",
     github: "https://github.com/tharveyster/FlixFinder",
