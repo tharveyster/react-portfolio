@@ -6,8 +6,28 @@ import pic3 from "../../images/personal-cookbook-1.png";
 import pic4 from "../../images/tech-blog-screenshot.png";
 import pic5 from "../../images/ecbe-walkthrough-screenshot.png";
 import pic6 from "../../images/flixfinder-demo.png";
+import pic7 from "../../images/weloveeats-screenshot.png";
+import pic8 from "../../images/team-stream-screenshot.png";
 
 const projects = [
+  {
+    title: "WeLoveEats Recipe Site",
+    description: "Personal project that I've been developing for years. It has recipes with dynamically calculated nutrition facts. Registered users can like/dislike and leave comments. Has in-site search feature. Recipe creator in beta testing.",
+    resources: "HTML, CSS, PHP, JavaScript, Ajax, MySQL",
+    github: "https://github.com/tharveyster",
+    deployed: "https://www.weloveeats.com",
+    image: pic7,
+    alt: "WeLoveEats Recipe Site"
+  },
+  {
+    title: "T.E.A.M. Stream",
+    description: "Video streaming service with free and premium content. Has ability to purchase premium memberships. Integrates social collaboration elements (likes, comments, chat).",
+    resources: "HTML, CSS, JavaScript, React, GraphQL, Mongo/Mongoose, Stripe, React Player, Semantic UI React, Node, Express",
+    github: "https://github.com/tharveyster/Team-Stream",
+    deployed: "https://t-e-a-m-stream.herokuapp.com/",
+    image: pic8,
+    alt: "T.E.A.M. Stream"
+  },
   {
     title: "Budget Tracker",
     description: "This app keeps track of a running budget balance, online or offline. If updated while offline, it updates the database as soon as an internet connection becomes available.",
