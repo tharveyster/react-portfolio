@@ -1,58 +1,48 @@
-import React from 'react';
+import React from "react";
 
 export default function Navigation({ currentPage, handlePageChange }) {
-  const navbar = {
-    color: 'white',
-    float: 'right',
-    listStyle: 'none'
-  }
-  const navItem = {
-    display: 'inline',
-    margin: '0 10px 0 20px',
-    fontSize: 20
-  }
   return (
-    <ul style={navbar}>
-      <li style={navItem}>
+    <ul className="navbar">
+      <li className="navItem">
         <a
           href="#about"
-          onClick={() => handlePageChange('About Me')}
-
-          className={currentPage === 'About Me' ? 'nav-link active' : 'nav-link'}
+          onClick={() => handlePageChange("About Me")}
+          className={
+            currentPage === "About Me" ? "nav-link active" : "nav-link"
+          }
         >
           About Me
         </a>
       </li>
-      <li style={navItem}>
+      <li className="navItem">
         <a
           href="#projects"
-          onClick={() => handlePageChange('Projects')}
-
-          className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}
+          onClick={() => handlePageChange("Projects")}
+          className={
+            currentPage === "Projects" ? "nav-link active" : "nav-link"
+          }
         >
-          Projects
+          Portfolio
         </a>
       </li>
-      <li style={navItem}>
+      <li className="navItem">
         <a
           href="#contact"
-          onClick={() => handlePageChange('Contact')}
-
-          className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+          onClick={() => handlePageChange("Contact")}
+          className={currentPage === "Contact" ? "nav-link active" : "nav-link"}
         >
           Contact
         </a>
       </li>
-      <li style={navItem}>
+      <li className="navItem">
         <a
           href="#resume"
-          onClick={() => handlePageChange('Resume')}
-
-          className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+          onClick={() => handlePageChange("Resume")}
+          className={currentPage === "Resume" ? "nav-link active" : "nav-link"}
         >
           Resume
         </a>
       </li>
     </ul>
-  )
+  );
 }
