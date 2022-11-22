@@ -1,9 +1,14 @@
 import React, { useState } from "react";
+import emailjs from 'emailjs-com';
 import validateEmail from "../../utils/helpers";
 
+const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+const USER_ID = process.env.REACT_APP_USER_ID;
+
 export default function Contact() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+  const [from_name, setName] = useState("");
+  const [user_email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -12,9 +17,9 @@ export default function Contact() {
     const inputType = target.name;
     const inputValue = target.value;
 
-    if (inputType === "name") {
+    if (inputType === "from_name") {
       setName(inputValue);
-    } else if (inputType === "email") {
+    } else if (inputType === "user_email") {
       setEmail(inputValue);
     } else {
       setMessage(inputValue);
@@ -25,11 +30,11 @@ export default function Contact() {
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
-    if (inputType === "name") {
+    if (inputType === "from_name") {
       if (!inputValue.length) {
         setErrorMessage("The name field is required");
       }
-    } else if (inputType === "email") {
+    } else if (inputType === "user_email") {
       if (!validateEmail(inputValue)) {
         setErrorMessage("Email is invalid");
       } else {
@@ -47,8 +52,15 @@ export default function Contact() {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+    e.target.reset()
 
-    if (!validateEmail(email)) {
+    if (!validateEmail(user_email)) {
       setErrorMessage("Email is invalid");
       return;
     }
@@ -61,44 +73,44 @@ export default function Contact() {
   return (
     <div className="contactForm">
       <h2>Contact</h2>
-      <p>
-        This form is not active yet. In the meantime you can reach me at
-        todd@theharveysplace.com.
-      </p>
-      <form className="form">
+      <form className="form" onSubmit={handleFormSubmit}>
         <label>
           Name:
           <input
             className="form-field"
-            value={name}
-            name="name"
+            type="text"
+            name="from_name"
+            value={from_name}
             onBlur={validation}
             onChange={handleInputChange}
-            type="text"
             placeholder="Name"
+            required
           />
         </label>
         <label>
           Email:
           <input
             className="form-field"
-            value={email}
-            name="email"
+            type="email"
+            name="user_email"
+            value={user_email}
             onBlur={validation}
             onChange={handleInputChange}
-            type="email"
             placeholder="Email"
+            required
           />
         </label>
         <label>
           Message:
           <textarea
             className="form-field"
-            value={message}
+            type="text"
             name="message"
+            value={message}
             onBlur={validation}
             onChange={handleInputChange}
             placeholder="Message"
+            required
           />
         </label>
         {errorMessage && (
@@ -106,7 +118,7 @@ export default function Contact() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button className="btn" type="button" onClick={handleFormSubmit}>
+        <button className="btn" type="submit">
           Submit
         </button>
       </form>
