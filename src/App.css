@@ -183,6 +183,19 @@ textarea {
   resize: none;
 }
 
+.error-text, .success-text {
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.error-text {
+  color: #bb0000;
+}
+
+.success-text {
+  color: #00bb00;
+}
+
 .btn {
   border: none;
   border-radius: 5px;

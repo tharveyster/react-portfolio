@@ -11,6 +11,7 @@ export default function Contact() {
   const [user_email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const [successMessage, setSuccessMessage] = useState('');
 
   const handleInputChange = (e) => {
     const { target } = e;
@@ -55,8 +56,10 @@ export default function Contact() {
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
       .then((result) => {
         console.log(result.text);
+        setSuccessMessage('Your message was sent');
       }, (error) => {
         console.log(error.text);
+        setErrorMessage('An error has occurred and your message was not sent');
       });
     e.target.reset()
 
@@ -116,6 +119,11 @@ export default function Contact() {
         {errorMessage && (
           <div>
             <p className="error-text">{errorMessage}</p>
+          </div>
+        )}
+        {successMessage && (
+          <div>
+            <p className='success-text'>{successMessage}</p>
           </div>
         )}
         <button className="btn" type="submit">
